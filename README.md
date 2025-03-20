@@ -1,4 +1,7 @@
 # potential URL's
 
-- anvilempires-logi
-- anvilempires-calculator
+https://anvilempires-calculator.github.io
+
+https://anvilempireslogi.github.io
+
+https://anvilempires-logi.github.io
