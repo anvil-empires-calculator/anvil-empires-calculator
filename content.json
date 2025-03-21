@@ -1,10 +1,24 @@
 {
-    "Category": {
-        "Buildings": {
+    "Crafting": {
+        "Category": {
+            "Structures": {
 
-        },
-        "Items":{
-            
+            },
+            "Tools":{
+                
+            },
+            "Weapons":{
+
+            },
+            "Armours":{
+
+            },
+            "Foods":{
+
+            },
+            "Vehicles": {
+                
+            }
         }
     }
 }
