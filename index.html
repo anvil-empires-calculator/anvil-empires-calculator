@@ -1,41 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJQR6K8QE8"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-FJQR6K8QE8');
-  </script>
-<!--META-->
+  <!-- Google tag to track number of site visits (GitHub lacks this) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJQR6K8QE8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FJQR6K8QE8');
+    </script>
+
+  <!--META-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="ladytorrens">
     <meta name="description" content="Anvil Empires Calculator helps you optimize your gameplay by providing quick, accurate resource requirement calculations.">
     <title>Anvil Empires Logistics Calculator</title>
-<!--LINKS & SCRIPTS-->
-    <link rel="stylesheet" href="/CSS/styles.css">
+
+  <!--LINKS & SCRIPTS-->
+    <link rel="stylesheet" href="CSS/styles.css">
     <link rel="icon" type="image/x-icon" href="/IMG/favicon.webp">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script defer src="/JS/main.js"></script>
+    <script defer src="JS/main.js"></script>
 </head>
-<body>
-  <header>
-    <img src="IMG/favicon.webp" alt="Header IMG" width="110" height="125">
-    <h1>Anvil Empires Logistics Calculator</h1>
-      <div class="Header-Content">
-        <p>Site currently in development.</p>
-        <p>Given Anvil Empires is currently in Pre Alpha everything on this page is subject to constant change and I'll do my best to keep everything updated.</p>
-      </div>
-  </header>
-  <div class="Calculator">
-    <div id="Tabs">
-      <button class="Tab-Links" onclick="ChangeTabs()">Buildings</button>
-      <button class="Tab-Links" onclick="ChangeTabs()">Tools</button>
 
+<body>
+  <div id="app">
+    <header>
+      <img src="IMG/favicon.webp" alt="Header IMG" width="110" height="125">
+      <h1>Anvil Empires Logistics Calculator</h1>
+        <div class="Header-Content">
+          <h3>Under Development (Don't worry, I'll make it look beautiful!)</h3>
+          &nbsp
+          <p>Quickly calculate resources requirements and crafting times for everything in Anvil Empires and simplify your logistics.</p>
+        </div>
+    </header>
+    <div class="Calculator">
+      <div id="Tabs">
+        <button class="Tab-Links" onclick="ChangeTabs('Tools')">Tools</button>
+        <button class="Tab-Links" onclick="ChangeTabs('Weapons')">Weapons</button>
+        <button class="Tab-Links" onclick="ChangeTabs('Armour')">Armours</button>
+        <button class="Tab-Links" onclick="ChangeTabs('Foods')">Foods</button>
+        <button class="Tab-Links" onclick="ChangeTabs('Structures')">Structures</button>
+        <button class="Tab-Links" onclick="ChangeTabs('Vehicles')">Vehicles</button>
+      </div>
+      <div id="Contents">
+        
+      </div>
     </div>
   </div>
 </body>
+</html>
 
